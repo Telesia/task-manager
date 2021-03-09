@@ -24,7 +24,7 @@
                 <li><a href="#">Manage Categories</a></li>
                 <li><a href="#">Log Out</a></li>
                 <li><a href="#">Log In</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li><!--The 'register' relates to the function name in our @app in app.py-->
                 
             </ul>
             </div>
@@ -38,11 +38,11 @@
             <li><a href="#">Manage Categories</a></li>
             <li><a href="#">Log Out</a></li>
             <li><a href="#">Log In</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
         </ul>
     </header>
 <body>
-    <h1>I'm in the base template!</h1>
+    
     {% block content %}
     {% endblock %}
 
