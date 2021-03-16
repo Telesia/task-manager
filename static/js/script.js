@@ -10,5 +10,6 @@
             done: "Select"
         }
     });
+    $('select').formSelect();
   });
       
